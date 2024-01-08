@@ -129,6 +129,7 @@ nav ul a:hover{
     display: flex;
     gap: 1.5rem;
     padding-top: 1rem;
+    margin-bottom: 1.5rem
 }
 .item{
     background-color: #fff;
@@ -136,6 +137,10 @@ nav ul a:hover{
     box-shadow: 0 0 10px rgba(0,0,0,.09);
     padding: 2rem;
     text-align: center;
+    flex-basis: 50%;
+}
+.itemm img{
+    width: 200px;
 }
 .item .price{
     color: #FDA403;
@@ -146,7 +151,7 @@ nav ul a:hover{
     font-size: 1.8rem;
 }
 .food{
-    font-size: 3.5rem;
+    font-size: 2rem;
     line-height: 1.45;
     color: #000;
     font-family: "Playfair Display", serif;
@@ -196,7 +201,8 @@ nav ul a:hover{
     margin: auto;
 }
 .glry-img img{
-    width: 330px;
+    width: 300px;
+    height: 280px;
 }
 .glry-img{
     display: flex;
