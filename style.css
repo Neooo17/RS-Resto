@@ -125,47 +125,52 @@ nav ul a:hover{
     width: 70%;
     margin: auto;
 }
+
 .items{
     display: flex;
     gap: 1.5rem;
     padding-top: 1rem;
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
 }
 .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 23%;
     background-color: #fff;
     border-radius: 1.3rem;
     box-shadow: 0 0 10px rgba(0,0,0,.09);
-    padding: 2rem;
+    padding: 2rem 1rem;
     text-align: center;
-    flex-basis: 50%;
 }
-.itemm img{
-    width: 200px;
+.item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
 }
 .item .price{
     color: #FDA403;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-top: 2rem;
 }
 .price span{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 .food{
-    font-size: 2rem;
-    line-height: 1.45;
+    font-size: 1.8rem;
     color: #000;
     font-family: "Playfair Display", serif;
-    font-weight: bold;
 }
 .item p{
     color: #B9B9B9;
     font-family: Mulish,sans-serif;
     font-weight: 100;
-    line-height: 1.5;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 .item button{
-    padding: 0.8rem;
+    padding: 0.6rem 1.1rem;
     border: none;
     background-color: #FDA403;
     color: #fff;
@@ -390,6 +395,12 @@ nav ul a:hover{
         flex-direction: column;
         text-align: center;
         gap: 2rem;
+    }
+}
+
+@media (max-width:530px){
+    .items{
+        flex-direction: column;
     }
 }
 
