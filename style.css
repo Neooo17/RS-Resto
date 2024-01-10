@@ -142,6 +142,8 @@ nav ul a:hover{
     box-shadow: 0 0 10px rgba(0,0,0,.09);
     padding: 2rem 1rem;
     text-align: center;
+    position: relative; /* Add this line */
+    padding-bottom: 4rem;
 }
 .item img {
     max-width: 100%;
@@ -177,6 +179,10 @@ nav ul a:hover{
     margin-top: 1.2rem;
     cursor: pointer;
     font-family: Mulish,sans-serif;
+    position: absolute; /* Position the button absolutely */
+    bottom: 1.5rem; /* Adjust this value to move the button up or down */
+    left: 50%; /* Center the button */
+    transform: translateX(-50%); 
 }
 .item button:hover{
     background-color: #CB8402;
@@ -398,7 +404,7 @@ nav ul a:hover{
     }
 }
 
-@media (max-width:530px){
+@media (max-width:560px){
     .items{
         flex-direction: column;
     }
