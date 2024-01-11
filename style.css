@@ -143,7 +143,7 @@ nav ul a:hover{
     padding: 2rem 1rem;
     text-align: center;
     position: relative; /* Add this line */
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 .item img {
     max-width: 100%;
@@ -305,6 +305,78 @@ nav ul a:hover{
 }
 
 
+/* payment styling */
+
+.quantity-input {
+    width: 50px;
+    margin: 1rem 0;
+    position: absolute;
+    top: 20.5rem;
+    padding: 0.1rem;
+}
+.quantity-input1{
+    top: 19.4rem;
+}
+.quantity-input2{
+    top: 18rem;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    font-size: 1.6rem;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 1.5rem;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    bottom: 56%;
+    right: 11%;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content button{
+    padding: 0.6rem 1.5rem;
+    border: none;
+    background-color: #FDA403;
+    color: #fff;
+    cursor: pointer;
+}
+.modal-content button:hover{
+    background-color: #CB8402;
+}
+
+
 
 @media (max-width:980px){
     .info{
@@ -336,6 +408,9 @@ nav ul a:hover{
 
     .glry-img img{
         width: 300px;
+    }
+    .close{
+        bottom: 60%;
     }
 }
 
@@ -402,16 +477,29 @@ nav ul a:hover{
         text-align: center;
         gap: 2rem;
     }
+
+    .modal-content {
+        margin: 30% auto;
+    }
+    .close{
+        bottom: 50%;
+    }
 }
 
 @media (max-width:560px){
     .items{
         flex-direction: column;
     }
+    .modal-content{
+        font-size: 1.2rem;
+    }
 }
 
-@media (max-width:460px){
+@media (max-width:477px){
     .row img{
         width: 330px;
+    }
+    .close{
+        bottom: 65%;
     }
 }
