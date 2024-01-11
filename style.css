@@ -502,6 +502,9 @@ nav ul a:hover{
     .modal-content{
         font-size: 1.2rem;
     }
+    .close{
+        top: 13.4%;
+    }
 }
 
 @media (max-width:477px){
