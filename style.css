@@ -490,6 +490,15 @@ nav ul a:hover{
     .items{
         flex-direction: column;
     }
+    .quantity-input{
+        top: 19.6rem;
+    }
+    .quantity-input1{
+        top: 18.3rem;
+    }
+    .quantity-input2{
+        top: 18rem;
+    }
     .modal-content{
         font-size: 1.2rem;
     }
