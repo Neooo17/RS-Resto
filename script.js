@@ -48,7 +48,7 @@ function showModal(itemName, quantity, total) {
             <span class="close">&times;</span>
             <p>You have ordered ${quantity} ${itemName}(s).</p>
             <p>Total: ₹${total}</p>
-            <button>Proceed to Payment</button>
+            <button id="proceedToPayment">Proceed to Payment</button>
         </div>
     `;
 
