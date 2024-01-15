@@ -14,6 +14,15 @@
         .payment img{
             width: 300px;
         }
+        .upi-link{
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: #2d2e32;
+            font-weight: 600;
+        }
+        .upi-link:hover{
+            color: #147EFB;
+        }
     </style>
 
 </head>
@@ -21,7 +30,8 @@
     <div class="payment">
         <h2>Scan the QR Code or use UPI ID to make a payment</h2>
         <img src="images/QR Code.jpg" alt="QR Code" />
-        <p>UPI ID: 7610000950-1@okbizaxis</p>
+        <p>UPI ID : <a href="upi://pay?pa=7610000950-1@okbizaxis&pn=RS HOtel&cu=INR
+        " class="upi-link"> 7610000950-1@okbizaxis</a> </p>
     </div>
 </body>
 </html>
