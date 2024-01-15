@@ -63,3 +63,12 @@ function showModal(itemName, quantity, total) {
 
     modal.style.display = "block";
 }
+
+// for payment page
+
+document.body.addEventListener('click', function(event) {
+    if (event.target.id === 'proceedToPayment') {
+        window.location.href = 'payment.html';
+    }
+});
+
