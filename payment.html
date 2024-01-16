@@ -33,32 +33,7 @@
         <p>UPI ID : <a href="" class="upi-link"> 7610000950-1@okbizaxis</a> </p>
     </div>
 
-<!-- for using query parameter -->
-
-    <!-- <script>
-        function getQueryParam(param) {
-            console.log(window.location.search);
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(param);
-        }
+    <script src="src/payment.js"></script>
     
-        const amount = getQueryParam('amount');
-        console.log(amount);
-        if (amount) {
-            const upiLink = document.querySelector('.upi-link');
-            upiLink.href = `upi://pay?pa=7610000950-1@okbizaxis&pn=RS%20HOtel&cu=INR&am=${amount}`;
-    }
-    </script> -->
-
-    <script>
-        const amount = localStorage.getItem('amount'); // Retrieve the amount
-        console.log(amount);
-
-    if (amount) {
-        const upiLink = document.querySelector('.upi-link');
-        upiLink.href = `upi://pay?pa=7610000950-1@okbizaxis&pn=RS%20HOtel&cu=INR&am=${amount}`;
-    }
-    </script>
-
 </body>
 </html>
