@@ -34,6 +34,9 @@ orderButtons.forEach(button => {
         const quantity = document.getElementById(quantityId).value;
         const total = price * quantity;
         showModal(itemName, quantity, total);
+
+        // window.location.href = `payment.html?amount=${total}`;  for query parameter
+        localStorage.setItem('amount', total); // for using local storage
     });
 });
 

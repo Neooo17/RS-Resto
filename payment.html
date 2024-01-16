@@ -16,7 +16,6 @@
         }
         .upi-link{
             font-size: 1.4rem;
-            text-decoration: none;
             color: #2d2e32;
             font-weight: 600;
         }
@@ -30,8 +29,35 @@
     <div class="payment">
         <h2>Scan the QR Code or use UPI ID to make a payment</h2>
         <img src="images/QR Code.jpg" alt="QR Code" />
-        <p>UPI ID : <a href="upi://pay?pa=7610000950-1@okbizaxis&pn=RS HOtel&cu=INR
-        " class="upi-link"> 7610000950-1@okbizaxis</a> </p>
+        <p>UPI ID : <a href="" class="upi-link"> 7610000950-1@okbizaxis</a> </p>
     </div>
+
+<!-- for using query parameter -->
+
+    <!-- <script>
+        function getQueryParam(param) {
+            console.log(window.location.search);
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+    
+        const amount = getQueryParam('amount');
+        console.log(amount);
+        if (amount) {
+            const upiLink = document.querySelector('.upi-link');
+            upiLink.href = `upi://pay?pa=7610000950-1@okbizaxis&pn=RS%20HOtel&cu=INR&am=${amount}`;
+    }
+    </script> -->
+
+    <script>
+        const amount = localStorage.getItem('amount'); // Retrieve the amount
+        console.log(amount);
+
+    if (amount) {
+        const upiLink = document.querySelector('.upi-link');
+        upiLink.href = `upi://pay?pa=7610000950-1@okbizaxis&pn=RS%20HOtel&cu=INR&am=${amount}`;
+    }
+    </script>
+
 </body>
 </html>
