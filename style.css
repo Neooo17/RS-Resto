@@ -292,7 +292,7 @@ nav ul a:hover{
 .social{
     display: flex;
     gap: 1.5rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 .social a{
     color: #fff;
@@ -300,7 +300,6 @@ nav ul a:hover{
 }
 .social a:hover{
     color: #147efb;
-    font-size: 2remm;
     transform: scale(1.2,1.2);
 }
 
