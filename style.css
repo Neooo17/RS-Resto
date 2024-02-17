@@ -142,7 +142,7 @@ nav ul a:hover{
     box-shadow: 0 0 10px rgba(0,0,0,.09);
     padding: 2rem 1rem;
     text-align: center;
-    position: relative; /* Add this line */
+    position: relative;
     padding-bottom: 6rem;
 }
 .item img {
@@ -169,26 +169,52 @@ nav ul a:hover{
     font-weight: 100;
     font-size: 1rem;
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
-.item button{
+.item .order-btn{
     padding: 0.6rem 1.1rem;
     border: none;
     background-color: #FDA403;
     color: #fff;
-    margin-top: 1.2rem;
     cursor: pointer;
     font-family: Mulish,sans-serif;
     position: absolute; /* Position the button absolutely */
-    bottom: 1.5rem; /* Adjust this value to move the button up or down */
+    bottom: 1.5rem;
     left: 50%; /* Center the button */
     transform: translateX(-50%); 
 }
-.item button:hover{
+.item .order-btn:hover{
     background-color: #CB8402;
 }
-
-
+.qty-wrapper{
+    display: inline-block;
+    position: absolute;
+    top: 74%;
+}
+.qty-wrapper input{
+    text-align: center;
+    max-width: 80px;
+    padding: 9px 20px;
+    border: 1px solid #000000;
+}
+.qty-adjust{
+    border: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    line-height: 1;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: background .1s ease-out
+}
+.qty-adjust:hover{
+    background: #F2F2F2;
+}
+.qty-plus{
+    right: 0;
+}
 .gallery{
     display: flex;
     flex-direction: column;
@@ -303,22 +329,6 @@ nav ul a:hover{
     transform: scale(1.2,1.2);
 }
 
-
-/* payment styling */
-
-.quantity-input {
-    width: 50px;
-    margin: 1rem 0;
-    position: absolute;
-    top: 20.5rem;
-    padding: 0.1rem;
-}
-.quantity-input1{
-    top: 19.4rem;
-}
-.quantity-input2{
-    top: 18rem;
-}
 
 /* Modal styles */
 .modal {
