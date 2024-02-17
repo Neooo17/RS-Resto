@@ -21,9 +21,13 @@ links.forEach((link) => {
     })
 })
 
+//** nav bar toggle */
 
 
-//order now button UI and payment option
+
+
+
+//** order now button UI and payment option
 
 const orderButtons = document.querySelectorAll(".order-btn");
 orderButtons.forEach(button => {
@@ -66,6 +70,10 @@ function showModal(itemName, quantity, total) {
 
     modal.style.display = "block";
 }
+
+//** order now button UI and payment option */
+
+
 
 // for payment page
 
