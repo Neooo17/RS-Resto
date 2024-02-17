@@ -24,7 +24,40 @@ links.forEach((link) => {
 //** nav bar toggle */
 
 
+//** quantity increase & decrese by plus minus click
 
+var qtyWrappers = document.querySelectorAll('.qty-wrapper');
+
+qtyWrappers.forEach( wrapper => {
+    var quantityInput = wrapper.querySelector('.quantity-input');
+    var minusButton = wrapper.querySelector('.qty-minus');
+    var plusButton = wrapper.querySelector('.qty-plus');
+
+    minusButton.addEventListener('click', function () {
+        decreaseQuantity(quantityInput);
+    });
+
+    plusButton.addEventListener('click', function () {
+        increaseQuantity(quantityInput);
+    });
+});
+
+
+function decreaseQuantity(inputElement) {
+    var currentValue = parseInt(inputElement.value, 10);
+
+    if (currentValue > 1) {
+        inputElement.value = currentValue - 1;
+    }
+}
+
+function increaseQuantity(inputElement) {
+    var currentValue = parseInt(inputElement.value, 10);
+
+    inputElement.value = currentValue + 1;
+}
+
+//** quantity increase & decrese by plus minus click */
 
 
 //** order now button UI and payment option
